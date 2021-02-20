@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <div>
+        <h1 class="h2">Check Enter Number is Pangram Number or Not</h1>
+   </div>
+      <div>
+         
+          <h1 id="result"></h1>
+      </div>
+    <script>
+
+       function play()
+       {
+var inputstring =prompt("Enter the string your want to check ");
+var length2=inputstring.length
+if(length2==0)
+{
+alert("Please enter the string ")
+    play();
+}
+else{
+
+var match = 'abcdefghijklmnopqrstuvwxyz';
+length1= match.length;
+    var res, result;
+    for (var i=0; i < length1; i++)
+    {
+        res = match.charAt(i);
+        result = inputstring.indexOf(res);
+        if (result == -1)
+        {
+            console.log('not pangram number');
+            document.getElementById("result").innerText="The String is not a Pangram";
+            break;
+        } 
+        else if (i == 25)
+        {
+            console.log('pangram number');
+            document.getElementById("result").innerText="The String is  a Pangram";
+        }
+    }
+}
+       }
+    play();
+//         var arr=[];
+//         var b;
+//    var inputstring =prompt("Enter the string your want to check ")
+//    console.log(inputstring);
+   
+//    var lengthinput=inputstring.length;
+//    console.log(lengthinput);
+  
+//      var d= Array.from(inputstring);
+//     //  console.log(d);
+//     var len=d.length;
+//     console.log(len);
+//      for(var i=0;i<len;i++)
+//      {
+//         var result = inputstring[i];
+//          if (!(result >= 'a' && result <= 'z')) {
+//            b="false";
+//          }
+// b="true"
+//       }
+//   if(b=="true")
+//   {
+//      //console.log(b)
+// document.getElementById("result").innerHTML="The String is a Pangram";
+//   }  
+//   else{
+//       console.log(b);
+//       document.getElementById("result").innerHTML="The String is not a  Pangram";
+//   } 
+   
+
+    </script>
+  </body>
+</html>
