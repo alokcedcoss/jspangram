@@ -6,7 +6,7 @@
   </head>
   <body>
     <div>
-        <h1 class="h2">Check Enter Number is Pangram Number or Not</h1>
+        <h1 class="h2">Check Enter string is Pangram or Not</h1>
    </div>
       <div>
          
@@ -34,49 +34,19 @@ length1= match.length;
         result = inputstring.indexOf(res);
         if (result == -1)
         {
-            console.log('not pangram number');
+            console.log('not pangram');
             document.getElementById("result").innerText="The String is not a Pangram";
             break;
         } 
         else if (i == 25)
         {
-            console.log('pangram number');
+            console.log('pangram ');
             document.getElementById("result").innerText="The String is  a Pangram";
         }
     }
 }
        }
     play();
-//         var arr=[];
-//         var b;
-//    var inputstring =prompt("Enter the string your want to check ")
-//    console.log(inputstring);
-   
-//    var lengthinput=inputstring.length;
-//    console.log(lengthinput);
-  
-//      var d= Array.from(inputstring);
-//     //  console.log(d);
-//     var len=d.length;
-//     console.log(len);
-//      for(var i=0;i<len;i++)
-//      {
-//         var result = inputstring[i];
-//          if (!(result >= 'a' && result <= 'z')) {
-//            b="false";
-//          }
-// b="true"
-//       }
-//   if(b=="true")
-//   {
-//      //console.log(b)
-// document.getElementById("result").innerHTML="The String is a Pangram";
-//   }  
-//   else{
-//       console.log(b);
-//       document.getElementById("result").innerHTML="The String is not a  Pangram";
-//   } 
-   
 
     </script>
   </body>
